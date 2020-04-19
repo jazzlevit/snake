@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.info-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 560px;
+}
+
+#grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 560px;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000 ;
+    cursor: pointer;
+}
+
+.active {
+    background: #000;
+}
+
+@media (max-width: 1024px)  {
+    .info-box,
+    #gird {
+        width: 100%;
+    }
+}
